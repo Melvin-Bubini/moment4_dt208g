@@ -1,0 +1,18 @@
+<h2>Kurser</h2>
+
+<table>
+    <thead>
+        <tr>
+            <td id="kurskodTd">Kurskod</td>
+            <td id="namnTd">Namn</td>
+            <td id="progressionTd">Progression</td>
+        </tr>
+    </thead>
+    <tbody id="kurs-list" *ngFor="let user of userlist">
+        <tr>
+            <td id="kurskodTd"> {{ user.code }}</td>
+            <td id="namnTd">{{ user.coursename }}</td>
+            <td id="progressionTd">{{ user.progression }}</td>
+        </tr>
+    </tbody>
+</table>

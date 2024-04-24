@@ -1,0 +1,20 @@
+[
+    {
+        "code": "dt057g",
+        "coursename": "Webbutveckling I",
+        "progression": "A",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT057G/"
+    },
+    {
+        "code": "dt084g",
+        "coursename": "Introduktion till programmering i JavaScript",
+        "progression": "A",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT084G/"
+    },
+    {
+        "code": "dt200g",
+        "coursename": "Grafisk teknik för webb",
+        "progression": "A",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT200G/"
+    }
+]
