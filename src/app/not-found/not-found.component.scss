@@ -1,0 +1,6 @@
+@use '../../styles'; // Inkludera styles.scss
+
+body {
+    @include styles.center-element;
+    
+}

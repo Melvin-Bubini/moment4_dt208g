@@ -12,11 +12,11 @@
                 <td id="progressionTd">Progression</td>
             </tr>
         </thead>
-        <tbody id="kurs-list" *ngFor="let user of userlist">
+        <tbody id="kurs-list" *ngFor="let course of courses">
             <tr>
-                <td id="kurskodTd"> {{ user.code }}</td>
-                <td id="namnTd">{{ user.coursename }}</td>
-                <td id="progressionTd">{{ user.progression }}</td>
+                <td id="kurskodTd"> {{ course.code }}</td>
+                <td id="namnTd">{{ course.coursename }}</td>
+                <td id="progressionTd">{{ course.progression }}</td>
             </tr>
         </tbody>
     </table>

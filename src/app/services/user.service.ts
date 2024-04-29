@@ -8,7 +8,6 @@ import { User } from '../model/user';
 })
 export class UserService {
 
-
   private url: string = "assets/users.json";
 
   constructor(private http: HttpClient) { }

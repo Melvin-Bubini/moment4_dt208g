@@ -89,7 +89,8 @@ $background-color-dark: darken($background-color, 40%);
     li,
     ul,
     span,
-    label {
+    label,
+    table {
         color: $text-color;
     }
 }
@@ -104,7 +105,7 @@ $background-color-dark: darken($background-color, 40%);
         background-color: $main-color-dark;
     }
 
-    body{
+    body {
         background-color: $background-color-dark;
     }
 
@@ -114,7 +115,8 @@ $background-color-dark: darken($background-color, 40%);
     li,
     ul,
     span,
-    label {
+    label,
+    table {
         color: $text-color-dark;
     }
 }
