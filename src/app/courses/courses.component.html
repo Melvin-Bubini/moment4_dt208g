@@ -2,22 +2,27 @@
     <h2>Kurser</h2>
     <form>
         <label for="search">Sök:</label>
-        <input type="text" name="search" id="search">
+        <input type="text" name="search" id="search" [(ngModel)]="filterValue" (input)="applyFilter()">
     </form>
+
     <table>
         <thead>
             <tr>
-                <td id="kurskodTd">Kurskod</td>
-                <td id="namnTd">Namn</td>
-                <td id="progressionTd">Progression</td>
+                <td id="kurskodTd" (click)="sortFilter('kurskod')">Kurskod</td>
+                <td id="namnTd" (click)="sortFilter('kursnamn')">Namn</td>
+                <td id="progressionTd" (click)="sortFilter('progression')">Progression</td>
             </tr>
         </thead>
-        <tbody id="kurs-list" *ngFor="let course of courses">
+        <tbody id="kurs-list" *ngFor="let course of (sortedCourses.length > 0 ? sortedCourses : filteredCourses)">
             <tr>
                 <td id="kurskodTd"> {{ course.code }}</td>
                 <td id="namnTd">{{ course.coursename }}</td>
                 <td id="progressionTd">{{ course.progression }}</td>
             </tr>
-        </tbody>
+        </tbody> 
+        
+        @if (filteredCourses.length === 0) {
+            <span>Inga kurser hittades...</span>
+        }
     </table>
 </div>
